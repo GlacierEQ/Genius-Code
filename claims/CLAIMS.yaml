@@ -1,0 +1,37 @@
+schema_version: 1
+claims:
+  - id: code-testing-property-001
+    statement: Property-based tests expose classes of edge cases that example-only tests may omit.
+    dimension: verification
+    status: mapped
+    source_refs:
+      - src-hypothesis-001
+    evidence_refs: []
+    challenge_refs:
+      - ch-property-sort-001
+    counterevidence_refs: []
+  - id: code-memory-model-001
+    statement: A language memory model defines which reorderings and visibility outcomes are legal; programs that assume stronger ordering without synchronization are incorrect under that model.
+    dimension: foundations
+    status: mapped
+    source_refs:
+      - src-go-memory-model
+    evidence_refs: []
+    challenge_refs: []
+    counterevidence_refs: []
+  - id: code-invariants-001
+    statement: Data-structure correctness is expressed as invariants that must hold after every public operation; tests that only check happy-path outputs can miss invariant violations.
+    dimension: mechanisms
+    status: mapped
+    source_refs: []
+    evidence_refs: []
+    challenge_refs: []
+    counterevidence_refs: []
+  - id: code-benchmark-env-001
+    statement: Performance claims require recorded hardware, OS, runtime, commit, flags, warmup, sample count, and workload; “X is faster” without environment is not evidence.
+    dimension: verification
+    status: mapped
+    source_refs: []
+    evidence_refs: []
+    challenge_refs: []
+    counterevidence_refs: []

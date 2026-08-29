@@ -1,0 +1,81 @@
+schema_version: 1
+sources:
+  - id: src-hypothesis-001
+    title: Hypothesis Property-Based Testing
+    url: https://hypothesis.readthedocs.io/en/latest/
+    authority: primary
+    publisher: Hypothesis project
+    domain_tags: [verification, testing]
+    version: current
+    first_seen: "2026-08-29"
+    last_verified: "2026-08-29"
+    supports_claims: [code-testing-property-001]
+    challenges_claims: []
+    trust_notes: Canonical Python property-based testing library and docs.
+  - id: src-go-memory-model
+    title: Go Memory Model
+    url: https://go.dev/ref/mem
+    authority: primary
+    publisher: Go Project
+    domain_tags: [concurrency, languages]
+    version: current
+    first_seen: "2026-08-29"
+    last_verified: "2026-08-29"
+    supports_claims: [code-memory-model-001]
+    challenges_claims: []
+    trust_notes: Official language memory-model specification.
+  - id: src-llvm-docs
+    title: LLVM Documentation
+    url: https://llvm.org/docs/
+    authority: primary
+    publisher: LLVM Project
+    domain_tags: [compilers]
+    version: current
+    first_seen: "2026-08-29"
+    last_verified: "2026-08-29"
+    supports_claims: []
+    challenges_claims: []
+  - id: src-libfuzzer
+    title: LLVM libFuzzer
+    url: https://llvm.org/docs/LibFuzzer.html
+    authority: primary
+    publisher: LLVM Project
+    domain_tags: [verification, fuzzing]
+    version: current
+    first_seen: "2026-08-29"
+    last_verified: "2026-08-29"
+    supports_claims: []
+    challenges_claims: []
+  - id: src-asan
+    title: AddressSanitizer
+    url: https://clang.llvm.org/docs/AddressSanitizer.html
+    authority: primary
+    publisher: LLVM/Clang
+    domain_tags: [verification, sanitizers]
+    version: current
+    first_seen: "2026-08-29"
+    last_verified: "2026-08-29"
+    supports_claims: []
+    challenges_claims: []
+  - id: src-google-eng-practices
+    title: Google Engineering Practices
+    url: https://google.github.io/eng-practices/
+    authority: primary
+    publisher: Google
+    domain_tags: [code-craft]
+    version: current
+    first_seen: "2026-08-29"
+    last_verified: "2026-08-29"
+    supports_claims: []
+    challenges_claims: []
+  - id: src-ostep
+    title: Operating Systems Three Easy Pieces
+    url: https://pages.cs.wisc.edu/~remzi/OSTEP/
+    authority: university
+    publisher: Remzi & Andrea Arpaci-Dusseau
+    domain_tags: [systems]
+    version: current
+    first_seen: "2026-08-29"
+    last_verified: "2026-08-29"
+    supports_claims: []
+    challenges_claims: []

@@ -1,0 +1,12 @@
+schema_version: 1
+near_term:
+  - Property-based sorting challenge with Hypothesis + evidence receipt
+  - Minimal reference implementations for selected data-structure invariants
+  - Source audit tooling against REGISTRY.yaml
+mid_term:
+  - Sanitizer + fuzz targets for a small parser or protocol
+  - Benchmark methodology with environment capture
+  - Composition with Genius-Verification once that repo exists
+frontier:
+  - Differential fuzzing across compiler pipelines
+  - Formalization of selected concurrency claims

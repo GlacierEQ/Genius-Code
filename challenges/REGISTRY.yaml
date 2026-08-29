@@ -1,0 +1,31 @@
+schema_version: 1
+challenges:
+  - id: ch-property-sort-001
+    tier: foundation
+    objective: Express sorting correctness as properties (permutation + ordered) and find counterexamples to a broken sort with property-based testing.
+    prerequisites: []
+    success_criteria:
+      - Properties encoded and executed
+      - At least one deliberate bug in a sort implementation is detected by the properties
+      - Evidence receipt written to evidence/ledger.jsonl
+    failure_criteria:
+      - Only example tests, no quantified properties
+    evidence_emitted:
+      - property_test
+    claims_tested:
+      - code-testing-property-001
+    reproducibility: pinned Hypothesis version + seed recorded in receipt
+  - id: ch-memory-model-read-001
+    tier: foundation
+    objective: From the Go memory model, state three legal vs illegal reorderings/visibility outcomes and cite the relevant rules.
+    prerequisites: []
+    success_criteria:
+      - Three concrete scenarios with citeable rules
+      - No stronger-than-model assumptions presented as guaranteed
+    failure_criteria:
+      - Claims that sequential consistency is always provided
+    evidence_emitted:
+      - reconstruction
+    claims_tested:
+      - code-memory-model-001
+    reproducibility: source version noted

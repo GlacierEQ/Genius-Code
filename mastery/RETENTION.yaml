@@ -1,0 +1,8 @@
+schema_version: 1
+strategy: spaced-revalidation+transfer
+policies:
+  - revalidate volatile claims when language/runtime/docs versions change
+  - revisit stable algorithmic claims via reconstruction and transfer challenges
+  - stale evidence preserved for lineage; not treated as current proof
+  - single pass never grants permanent mastery status
+reviews: []

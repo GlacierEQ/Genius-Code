@@ -1,0 +1,14 @@
+schema_version: 1
+items:
+  - id: frontier-code-001
+    question: Can differential fuzzing expose optimizer-specific semantic divergence across two compiler pipelines?
+    why_it_matters: Detect semantic assumptions missed by example tests.
+    related_claims: []
+    dependencies:
+      - Genius-Code
+      - Genius-Verification
+    evidence_to_resolve:
+      - reproducible corpus
+      - minimized counterexamples
+      - compiler/version matrix
+    status: open

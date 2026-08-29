@@ -1,0 +1,17 @@
+spec_version: 1
+repository: Genius-Code
+provides:
+  - id: code.testing.property
+    description: Property-based testing claims and challenge harness (seed)
+    stage: mapped
+    interface: challenges/
+    evidence_refs: []
+consumes:
+  - repository: Genius-Mastery
+    capability: mastery.kernel.schemas
+    minimum_spec_version: 1
+    reason: Shared JSON Schema contracts and identity rules.
+  - repository: Genius-Mastery
+    capability: mastery.kernel.validate
+    minimum_spec_version: 1
+    reason: Local validation alignment with family kernel.
