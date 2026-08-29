@@ -91,6 +91,13 @@ layers:
     alternate_routes: []
     failure_modes: []
     improvement_targets: ["separate code correctness from deployment effect"]
+  teaching:
+    required: ["explain code mechanisms", "reconstruct implementations", "transfer across languages/runtimes", "teach verification and repair methods"]
+    available: [teaching/TEACHING.yaml]
+    missing: [measured learner outcomes]
+    alternate_routes: [human review, reconstruction challenges]
+    failure_modes: [memorized answer without transfer, unverified instruction propagation]
+    improvement_targets: [teaching benchmarks, transfer evidence, descendant independence]
   learning_evolution:
     required: ["failure evidence", "benchmark deltas", "reusable lessons"]
     available: ["mastery loop", "frontier queue"]
