@@ -1,5 +1,7 @@
 # Genius-Code
 
+[![Buildkite](https://badge.buildkite.com/963583c73f3cd364adfafef25db4d5f68e794b3d545450003e.svg)](https://buildkite.com/casey-1/genius-code)
+
 Flagship domain repository for **code mastery**.
 
 Identity: `Genius-Code` (hyphenated only; no colon-form dual identity).
@@ -70,7 +72,7 @@ python tools/validate.py .
 | Challenge ladder skeleton | Present |
 | Evidence ledger | Empty (no executed receipts yet) |
 | Implementations / benchmarks | Not yet populated |
-| External CI | Unverified until Actions run |
+| Buildkite CI (`casey-1/genius-code`) | Observed PASS on [build #1](https://buildkite.com/casey-1/genius-code/builds/1) @ `16e11cc4db97f3319d7843f6e75a84693a973e83` including Hypothesis property-sort |
 
 ## License
 
