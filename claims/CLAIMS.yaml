@@ -8,6 +8,8 @@ claims:
       - src-hypothesis-001
     evidence_refs:
       - ev-property-sort-001
+      - ev-bk-code-001
+      - ev-bk-code-002
     challenge_refs:
       - ch-property-sort-001
     counterevidence_refs: []
@@ -33,6 +35,7 @@ claims:
     dimension: verification
     status: mapped
     source_refs: []
-    evidence_refs: []
+    evidence_refs:
+      - ev-bk-code-002
     challenge_refs: []
     counterevidence_refs: []
