@@ -1,23 +1,37 @@
 # AGENTS.md — Genius-Code
 
-## Buildkite execution
+## Buildkite execution contract
 
-Expected Buildkite pipeline slug: `genius-code`.
+Expected pipeline: `casey-1/genius-code`.
 
-When Buildkite tools are available, use Buildkite's official remote MCP server at `https://mcp.buildkite.com/mcp` and inspect live pipeline/build state before making CI claims.
+APEX control is external: `GlacierEQ/apex-control-plane/scripts/reconcile_genius_buildkite.py` owns pipeline reconciliation and terminal family verification. This repository owns Code-domain execution only.
 
-Primary Buildkite evidence lanes:
+The Code verification job must preserve:
 
 - contract validation;
 - contract unit tests;
-- Hypothesis property-based verification in `verification/properties/test_sort_properties.py`.
+- Hypothesis property verification in `verification/properties/test_sort_properties.py`;
+- JUnit + SHA-256 proof artifacts;
+- a host-side terminal receipt bound to those artifacts.
+
+Buildkite's base upload step owns dynamic pipeline parse/secret validation. Do not re-add a duplicate child-side upload preflight.
+
+The Docker job may receive only the nonsecret identity variables it actually needs. Do not use `propagate-environment: true`.
+
+Current production queue: `macos-self`. Do not route to `oracle-arm64` until that queue has live independent Buildkite proof.
+
+A successful claim requires all of:
+
+1. the exact GitHub head was checked out;
+2. the Code verification job passed;
+3. the terminal receipt was emitted with artifact digests;
+4. Buildkite reported terminal PASS;
+5. `buildkite/genius-code` projected success to that exact GitHub SHA.
 
 Useful commands:
 
 ```sh
 bk pipeline validate --file .buildkite/pipeline.yml
-bk pipeline view genius-code --json
-bk build view --pipeline genius-code --summary
+bk pipeline view casey-1/genius-code --json
+bk build view --pipeline casey-1/genius-code --summary
 ```
-
-For failures, inspect Buildkite jobs/logs and preserve the distinction between a committed pipeline definition and an executed build result.
