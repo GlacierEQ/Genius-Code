@@ -1,0 +1,46 @@
+schema_version: 1
+teacher: Genius-Code
+subject: Code mastery: implementation, debugging, verification, performance, reliability, and production transfer
+
+method:
+  explain:
+    - language/runtime semantics
+    - algorithms and data structures
+    - failure modes and tradeoffs
+    - evidence behind implementation claims
+  demonstrate:
+    - build one working implementation
+    - show tests, measurements, and failure evidence
+  reconstruct:
+    - rebuild the implementation from a blank state
+    - derive tests before copying any prior solution
+  transfer:
+    - apply the method in another language/runtime or architecture
+    - teach the repair/verification method to another learner
+
+learner:
+  starting_state: novice-or-partially-capable
+  target_state: independently reconstructs, verifies, transfers, and teaches the domain method
+  allowed_support:
+    - Genius-Mastery contracts
+    - domain sources and evidence
+    - live tools and runtimes
+
+verification:
+  acceptance:
+    - Learner can explain the method and its failure modes.
+    - Learner can reconstruct a result from a blank state.
+    - Learner can transfer the method to a novel case.
+    - Learner can distinguish verified capability from mapped aspiration.
+  evidence_refs: []
+  transfer_challenges:
+    - Reimplement a verified algorithm in a different language.
+    - Diagnose and repair a new failure without using the original patch.
+    - Explain why the tests are sufficient or where they are not.
+  counterevidence: []
+
+outcome_metrics:
+  reconstruction_success: 0.0
+  transfer_success: 0.0
+  explanation_quality: 0.0
+  independence: 0.0
