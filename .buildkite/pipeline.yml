@@ -1,44 +1,41 @@
 env:
   PYTHON_VERSION: "3.13"
+  PIP_DISABLE_PIP_VERSION_CHECK: "1"
+  PYTHONDONTWRITEBYTECODE: "1"
 
 steps:
   - label: ":python: Contract validate"
     key: validate
+    timeout_in_minutes: 10
     command:
+      - python --version
       - pip install pyyaml
       - python tools/validate.py .
     plugins:
-      - docker#v5.12.0:
+      - docker#v5.14.0:
           image: "python:3.13-slim"
           always-pull: true
-          workdir: /workdir
-          volumes:
-            - "./:/workdir"
-
-  - label: ":hypothesis: Property-sort challenge (ev-property-sort-001)"
-    key: property-sort
-    depends_on: validate
-    command:
-      - pip install -r requirements.txt
-      - python -m pytest verification/properties/test_sort_properties.py -q
-    plugins:
-      - docker#v5.12.0:
-          image: "python:3.13-slim"
-          always-pull: true
-          workdir: /workdir
-          volumes:
-            - "./:/workdir"
 
   - label: ":pytest: Contract unit tests"
     key: unit
     depends_on: validate
+    timeout_in_minutes: 10
     command:
-      - pip install pyyaml pytest
+      - pip install -r requirements.txt
       - pytest -q tests/
     plugins:
-      - docker#v5.12.0:
+      - docker#v5.14.0:
           image: "python:3.13-slim"
           always-pull: true
-          workdir: /workdir
-          volumes:
-            - "./:/workdir"
+
+  - label: ":hypothesis: Property-sort evidence"
+    key: property-sort
+    depends_on: validate
+    timeout_in_minutes: 10
+    command:
+      - pip install -r requirements.txt
+      - python -m pytest verification/properties/test_sort_properties.py -q
+    plugins:
+      - docker#v5.14.0:
+          image: "python:3.13-slim"
+          always-pull: true
