@@ -3,10 +3,11 @@ claims:
   - id: code-testing-property-001
     statement: Property-based tests expose classes of edge cases that example-only tests may omit.
     dimension: verification
-    status: mapped
+    status: adversarially_verified
     source_refs:
       - src-hypothesis-001
-    evidence_refs: []
+    evidence_refs:
+      - ev-property-sort-001
     challenge_refs:
       - ch-property-sort-001
     counterevidence_refs: []
@@ -28,7 +29,7 @@ claims:
     challenge_refs: []
     counterevidence_refs: []
   - id: code-benchmark-env-001
-    statement: Performance claims require recorded hardware, OS, runtime, commit, flags, warmup, sample count, and workload; “X is faster” without environment is not evidence.
+    statement: Performance claims require recorded hardware, OS, runtime, commit, flags, warmup, sample count, and workload; "X is faster" without environment is not evidence.
     dimension: verification
     status: mapped
     source_refs: []

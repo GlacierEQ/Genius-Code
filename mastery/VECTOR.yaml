@@ -15,8 +15,8 @@ dimensions:
     claims_mapped: 0
   verification:
     claims_mapped: 2
-    claims_with_evidence: 0
-    deepest_tier: mapped
+    claims_with_evidence: 1
+    deepest_tier: adversarially_verified
   performance:
     claims_mapped: 0
   reliability:
@@ -33,4 +33,4 @@ dimensions:
     claims_mapped: 0
   original_work:
     claims_mapped: 0
-notes: "All evidence counts start at zero. Recompute from ledger; never invent scores."
+notes: "Vector recomputed after ev-property-sort-001. One claim now has executable adversarial evidence."
