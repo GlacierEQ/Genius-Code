@@ -1,0 +1,160 @@
+schema_version: 1
+id: genius-code.vertical-excellence
+name: Genius Code Vertical Excellence
+purpose: Make code mastery executable from compute and runtime primitives through implementation, verification, operations, and production effects.
+state: mapped
+
+objective:
+  current_reality: "Code mastery scaffold, property-testing seed, source registry, challenge ladder, and Buildkite verification exist."
+  desired_reality: "Every important software outcome can be decomposed into substrate, runtime, language, implementation, verification, operational, and deployment capabilities with evidence and reusable higher-order compositions."
+  success_conditions:
+    - Mission-relevant dependencies are explicit.
+    - Working capability is preserved when optional routes degrade.
+    - Higher-order compositions add emergent capability rather than instruction duplication.
+    - Capability claims are bounded by observed evidence.
+
+layers:
+  compute:
+    required: ["CPU/GPU/RAM/storage appropriate to the workload"]
+    available: ["runtime-dependent"]
+    missing: []
+    alternate_routes: []
+    failure_modes: []
+    improvement_targets: ["profile resource bottlenecks by workload"]
+  runtime:
+    required: ["language runtimes", "compilers/interpreters", "dependency resolution"]
+    available: ["Python verification path"]
+    missing: ["broad language/runtime inventory"]
+    alternate_routes: []
+    failure_modes: []
+    improvement_targets: ["map Tower-of-Babel and production runtimes"]
+  code:
+    required: ["source semantics", "algorithms", "data structures", "interfaces", "build systems"]
+    available: ["domain map seed", "property-sort implementation evidence"]
+    missing: ["broad implementation corpus"]
+    alternate_routes: []
+    failure_modes: []
+    improvement_targets: ["populate reference and production implementations"]
+  reasoning:
+    required: ["algorithmic reasoning", "systems reasoning", "debugging", "performance reasoning"]
+    available: ["model-mediated reasoning"]
+    missing: ["benchmarked reasoning routes"]
+    alternate_routes: []
+    failure_modes: []
+    improvement_targets: ["challenge-specific model and method routing"]
+  skills:
+    required: ["read", "build", "debug", "test", "profile", "repair", "review"]
+    available: ["property testing seed"]
+    missing: ["full executable skill inventory"]
+    alternate_routes: []
+    failure_modes: []
+    improvement_targets: ["ingest proven Mega/Combo/Skill capabilities"]
+  capability_composition:
+    required: ["atomic code capabilities", "verification", "operations", "repair"]
+    available: ["interfaces/COMPOSITION.yaml"]
+    missing: ["automatic composition discovery"]
+    alternate_routes: []
+    failure_modes: []
+    improvement_targets: ["compose testing + diagnosis + repair + regression into higher capabilities"]
+  tools:
+    required: ["compiler", "test runner", "static analysis", "fuzzer", "profiler", "VCS"]
+    available: ["Python/Hypothesis verification path"]
+    missing: ["estate-wide tool inventory"]
+    alternate_routes: []
+    failure_modes: []
+    improvement_targets: ["bind tool evidence to capability nodes"]
+  verification:
+    required: ["unit", "property", "fuzz", "static", "dynamic", "formal where applicable"]
+    available: ["Hypothesis property verification"]
+    missing: ["broad verification harness"]
+    alternate_routes: []
+    failure_modes: []
+    improvement_targets: ["consume Genius-Verification capabilities"]
+  observability:
+    required: ["logs", "traces", "metrics", "test receipts"]
+    available: ["Buildkite receipts"]
+    missing: ["runtime performance telemetry"]
+    alternate_routes: []
+    failure_modes: []
+    improvement_targets: ["connect production evidence"]
+  reliability_recovery:
+    required: ["rollback", "reproduction", "regression prevention"]
+    available: ["version control and CI"]
+    missing: ["closed-loop repair corpus"]
+    alternate_routes: []
+    failure_modes: []
+    improvement_targets: ["map self-healing repair capability"]
+  real_world_effect:
+    required: ["working software change", "verified artifact", "deployment when authorized"]
+    available: ["repository mutation and CI evidence paths"]
+    missing: ["deployment-specific domain routes"]
+    alternate_routes: []
+    failure_modes: []
+    improvement_targets: ["separate code correctness from deployment effect"]
+  learning_evolution:
+    required: ["failure evidence", "benchmark deltas", "reusable lessons"]
+    available: ["mastery loop", "frontier queue"]
+    missing: ["automatic downstream impact propagation"]
+    alternate_routes: []
+    failure_modes: []
+    improvement_targets: ["rank primitive improvements by downstream code capability gain"]
+
+dependencies:
+  - id: mastery.kernel.capability-anatomy
+    relationship: requires
+    required_for_current_mission: true
+    alternate_routes: []
+  - id: mastery.kernel.capability-schema
+    relationship: requires
+    required_for_current_mission: true
+    alternate_routes: []
+
+action:
+  preconditions:
+    - Domain objective is explicit.
+  steps:
+    - Decompose the objective through the vertical stack.
+    - Discover available skills, tools, connectors, evidence, and alternate routes.
+    - Identify mission-sensitive bottlenecks.
+    - Compose the strongest executable route.
+    - Execute and verify the real effect.
+    - Preserve evidence and feed the gain into the next spiral.
+  expected_effects:
+    - Hidden low-level blockers become exact capability gaps.
+    - High-leverage improvements propagate upward.
+  postconditions:
+    - Current capability state reflects evidence.
+  alternate_routes: []
+  failure_modes:
+    - Treating an unavailable implementation as absence of the capability itself.
+  recovery_routes:
+    - Discover substitutes and reroute before declaring a scoped blocked state.
+
+verification:
+  acceptance:
+    - capabilities/STACK.yaml passes the Genius-Mastery structural validator.
+    - Material capability claims cite observed evidence before promotion.
+  tests: []
+  evidence_refs: []
+  independent_readback: []
+
+mission_impact:
+  mission_relevance: 1.0
+  necessity: 1.0
+  criticality: 1.0
+  sensitivity: 1.0
+  substitutability: 0.2
+  downstream_centrality: 1.0
+  improvement_leverage: 1.0
+  rationale: The vertical stack is the reusable substrate for every mission in this Genius domain.
+
+evolution:
+  current_bottleneck: "Populate executable capability nodes and connect them to proven skills, tools, Mega Skills, benchmarks, and production evidence."
+  improvement_targets:
+    - Mega Skills capability ingestion
+    - language/runtime inventory
+    - code action decomposition
+    - benchmark-driven bottleneck ranking
+  affected_capabilities: []
+  newly_possible_compositions: []
+  next_frontier: []
