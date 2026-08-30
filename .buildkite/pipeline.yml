@@ -19,26 +19,23 @@ steps:
           limit: 1
     command: |
       set -euo pipefail
-      apt-get update
-      apt-get install -y --no-install-recommends git
-      rm -rf /var/lib/apt/lists/*
-      python --version
-      python - <<'PY'
+      python3 --version
+      python3 - <<'PY'
       import os
       commit = os.environ.get("BUILDKITE_COMMIT", "")
       pipeline = os.environ.get("BUILDKITE_PIPELINE_SLUG", "")
       assert len(commit) == 40, commit
       assert pipeline == "genius-code", pipeline
       PY
-      pip install -r requirements.txt
-      python tools/validate.py .
-      python -m py_compile tools/buildkite_receipt.py
+      python3 -m pip install -r requirements.txt
+      python3 tools/validate.py .
+      python3 -m py_compile tools/buildkite_receipt.py
       mkdir -p .verification-artifacts
-      pytest -q tests/ --junitxml=.verification-artifacts/junit-unit.xml
-      python -m pytest verification/properties/test_sort_properties.py -q --junitxml=.verification-artifacts/junit-property-sort.xml
-      sha256sum .verification-artifacts/junit-unit.xml > .verification-artifacts/junit-unit.xml.sha256
-      sha256sum .verification-artifacts/junit-property-sort.xml > .verification-artifacts/junit-property-sort.xml.sha256
-      python tools/buildkite_receipt.py \
+      python3 -m pytest -q tests/ --junitxml=.verification-artifacts/junit-unit.xml
+      python3 -m pytest verification/properties/test_sort_properties.py -q --junitxml=.verification-artifacts/junit-property-sort.xml
+      shasum -a 256 .verification-artifacts/junit-unit.xml > .verification-artifacts/junit-unit.xml.sha256
+      shasum -a 256 .verification-artifacts/junit-property-sort.xml > .verification-artifacts/junit-property-sort.xml.sha256
+      python3 tools/buildkite_receipt.py \
         --repository Genius-Code \
         --output .verification-artifacts/buildkite-verified-receipt.json \
         --artifact .verification-artifacts/junit-unit.xml \
@@ -53,15 +50,3 @@ steps:
       - ".verification-artifacts/junit-property-sort.xml.sha256"
       - ".verification-artifacts/buildkite-verified-receipt.json"
       - ".verification-artifacts/buildkite-verified-receipt.json.sha256"
-    plugins:
-      - docker#v5.14.0:
-          image: "python:3.13-slim"
-          always-pull: true
-          pull-retries: 2
-          environment:
-            - "BUILDKITE_COMMIT"
-            - "BUILDKITE_BRANCH"
-            - "BUILDKITE_BUILD_ID"
-            - "BUILDKITE_BUILD_NUMBER"
-            - "BUILDKITE_PIPELINE_SLUG"
-            - "BUILDKITE_ORGANIZATION_SLUG"
