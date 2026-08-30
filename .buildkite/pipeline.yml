@@ -27,7 +27,9 @@ steps:
       assert len(commit) == 40, commit
       assert pipeline == "genius-code", pipeline
       PY
-      python3 -m pip install -r requirements.txt
+      python3 -m venv .venv
+      . .venv/bin/activate
+      pip install -r requirements.txt
       python3 tools/validate.py .
       python3 -m py_compile tools/buildkite_receipt.py
       mkdir -p .verification-artifacts
