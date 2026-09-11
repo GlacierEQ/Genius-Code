@@ -20,6 +20,19 @@ Not a skill pile or tutorial curriculum. An executable, continuously growing mas
 - performance engineering
 - reliability patterns
 - production engineering & supply chain
+- software architecture & quality attributes
+- security & adversarial reasoning
+- empirical software-engineering research methods
+
+## Epistemic foundation
+
+[`mastery/EPISTEMOLOGY.md`](mastery/EPISTEMOLOGY.md) defines the domain-specific knowledge law: software claims are classified by type and must meet the evidence burden appropriate to semantic, functional, algorithmic, systems, performance, reliability, security, architectural, or empirical propositions.
+
+The standing doctoral source nucleus is recorded in [`sources/REGISTRY.yaml`](sources/REGISTRY.yaml), seeded from current/canonical CMU, MIT, Stanford, Wisconsin, SEI, and author-maintained graduate sources.
+
+```text
+DEFINE → MODEL → IMPLEMENT → ANALYZE → CHALLENGE → MEASURE → VERIFY → OPERATE → UPDATE
+```
 
 ## Doctrine reminder
 
@@ -33,7 +46,7 @@ Scaffold ≠ mastery.
 ## Anatomy (required planes)
 
 ```text
-mastery/          knowledge targets + vector + retention
+mastery/          knowledge targets + vector + retention + epistemology
 claims/           falsifiable claims
 sources/          provenance-aware registry
 challenges/       foundation → frontier ladder
@@ -66,9 +79,9 @@ python tools/validate.py .
 | Surface | State |
 |---|---|
 | GENIUS.yaml v2 | Implemented |
-| Domain map seed | Present |
+| Domain map seed | Present + doctoral epistemic foundation |
 | Claims (example set) | Mapped |
-| Source registry (high-authority nucleus) | Present |
+| Source registry | Expanded with doctoral software-development authority nucleus |
 | Challenge ladder skeleton | Present |
 | Evidence ledger | Empty (no executed receipts yet) |
 | Implementations / benchmarks | Not yet populated |
