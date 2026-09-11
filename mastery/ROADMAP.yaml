@@ -1,12 +1,19 @@
 schema_version: 1
 near_term:
+  - Convert the doctoral source nucleus into proposition-typed claims with explicit evidence burdens
   - Property-based sorting challenge with Hypothesis + evidence receipt
   - Minimal reference implementations for selected data-structure invariants
   - Source audit tooling against REGISTRY.yaml
+  - Build one executable reproduction each for semantics/type systems, program analysis, systems, databases, distributed systems, compilers, architecture, security, and empirical-method reasoning
 mid_term:
   - Sanitizer + fuzz targets for a small parser or protocol
-  - Benchmark methodology with environment capture
-  - Composition with Genius-Verification once that repo exists
+  - Benchmark methodology with environment capture, distributions, baselines, and uncertainty
+  - Fault-model-driven distributed/concurrency challenge with crash, partition, retry, and recovery evidence
+  - Architecture decision challenge tying quality attributes to mechanisms, tradeoffs, and revisit triggers
+  - Security challenge requiring an explicit adversary/threat model before any security claim
+  - Composition with Genius-Verification for proof/test/model-checking cross-domain evidence
 frontier:
   - Differential fuzzing across compiler pipelines
   - Formalization of selected concurrency claims
+  - Mechanized proof or model checking for a high-value system invariant
+  - Reproduce and adversarially test a published software-systems result under a changed workload or architecture
