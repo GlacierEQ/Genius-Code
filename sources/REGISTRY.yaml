@@ -74,8 +74,166 @@ sources:
     authority: university
     publisher: Remzi & Andrea Arpaci-Dusseau
     domain_tags: [systems]
-    version: current
+    version: "1.10"
     first_seen: "2026-08-29"
-    last_verified: "2026-08-29"
+    last_verified: "2026-09-11"
     supports_claims: []
     challenges_claims: []
+    trust_notes: Free university-authored systems text organized around virtualization, concurrency, persistence, and security.
+
+  - id: src-cmu-se-phd-curriculum
+    title: Carnegie Mellon Software Engineering Ph.D. Curriculum
+    url: https://se-phd.s3d.cmu.edu/Student%20Resources/curriculum.html
+    authority: university
+    publisher: Carnegie Mellon University Software and Societal Systems Department
+    domain_tags: [software-engineering, research-methods, formal-methods, architecture, empirical]
+    version: current
+    first_seen: "2026-09-11"
+    last_verified: "2026-09-11"
+    supports_claims: []
+    challenges_claims: []
+    trust_notes: Canonical curriculum surface defining PhD breadth across symbolic, behavioral, engineering, and societal research.
+  - id: src-pfpl-harper
+    title: Practical Foundations for Programming Languages
+    url: https://www.cs.cmu.edu/~rwh/pfpl/
+    authority: university
+    publisher: Robert Harper / Carnegie Mellon University
+    domain_tags: [languages, semantics, type-systems, formal-methods]
+    version: second-edition
+    first_seen: "2026-09-11"
+    last_verified: "2026-09-11"
+    supports_claims: []
+    challenges_claims: []
+    trust_notes: Author-maintained surface for a foundational graduate text on rigorous programming-language definitions and analysis.
+  - id: src-cmu-15814-2026
+    title: CMU 15-814 Types and Programming Languages — Fall 2026
+    url: https://www.cs.cmu.edu/~janh/courses/814/26/
+    authority: university
+    publisher: Carnegie Mellon University
+    domain_tags: [languages, semantics, type-systems, proofs]
+    version: fall-2026
+    first_seen: "2026-09-11"
+    last_verified: "2026-09-11"
+    supports_claims: []
+    challenges_claims: []
+    trust_notes: Current graduate course covering static/dynamic semantics, progress/preservation, polymorphism, recursive and substructural types.
+  - id: src-cmu-program-analysis-2026
+    title: CMU 17-355/17-665/17-819 Program Analysis — Fall 2026
+    url: https://cmu-program-analysis.github.io/2026/
+    authority: university
+    publisher: Carnegie Mellon University
+    domain_tags: [program-analysis, abstract-interpretation, symbolic-execution, verification]
+    version: fall-2026
+    first_seen: "2026-09-11"
+    last_verified: "2026-09-11"
+    supports_claims: []
+    challenges_claims: []
+    trust_notes: Current course joins abstract interpretation foundations to practical analyses for proving properties and finding bugs.
+  - id: src-mit-6852-distributed-algorithms
+    title: MIT 6.852J Distributed Algorithms
+    url: https://ocw.mit.edu/courses/6-852j-distributed-algorithms-fall-2009/
+    authority: university
+    publisher: MIT OpenCourseWare / Nancy Lynch
+    domain_tags: [distributed, algorithms, consensus, impossibility, formal-models]
+    version: fall-2009-ocw
+    first_seen: "2026-09-11"
+    last_verified: "2026-09-11"
+    supports_claims: []
+    challenges_claims: []
+    trust_notes: PhD-level course explicitly designed to teach foundational distributed algorithms and prepare students for independent research.
+  - id: src-mit-65840-2026
+    title: MIT 6.5840 Distributed Systems — Spring 2026
+    url: https://pdos.csail.mit.edu/6.824/
+    authority: university
+    publisher: MIT PDOS / CSAIL
+    domain_tags: [distributed, replication, fault-tolerance, consistency]
+    version: spring-2026
+    first_seen: "2026-09-11"
+    last_verified: "2026-09-11"
+    supports_claims: []
+    challenges_claims: []
+    trust_notes: Current graduate implementation-and-paper course centered on fault tolerance, replication, and consistency.
+  - id: src-cmu-15712-2026
+    title: CMU 15-712 Advanced and Distributed Operating Systems — Fall 2026
+    url: https://www.cs.cmu.edu/~15712/
+    authority: university
+    publisher: Carnegie Mellon University
+    domain_tags: [operating-systems, distributed, systems-research]
+    version: fall-2026
+    first_seen: "2026-09-11"
+    last_verified: "2026-09-11"
+    supports_claims: []
+    challenges_claims: []
+    trust_notes: Current SCS PhD course using roughly forty research papers plus a semester research project to study state-of-the-art systems.
+  - id: src-cmu-15745
+    title: CMU 15-745 Optimizing Compilers for Modern Architectures
+    url: https://www.cs.cmu.edu/~15745/www/
+    authority: university
+    publisher: Carnegie Mellon University
+    domain_tags: [compilers, optimization, dataflow, code-generation]
+    version: current-course-surface
+    first_seen: "2026-09-11"
+    last_verified: "2026-09-11"
+    supports_claims: []
+    challenges_claims: []
+    trust_notes: Graduate compiler course with lecture notes, implementations, paper discussions, and research projects.
+  - id: src-cmu-15445-fall-2026
+    title: CMU 15-445/645 Database Systems — Fall 2026
+    url: https://15445.courses.cs.cmu.edu/fall2026/
+    authority: university
+    publisher: Carnegie Mellon Database Group
+    domain_tags: [databases, storage, transactions, recovery, query-processing]
+    version: fall-2026
+    first_seen: "2026-09-11"
+    last_verified: "2026-09-11"
+    supports_claims: []
+    challenges_claims: []
+    trust_notes: Current project-intensive systems course spanning storage engines, indexing, transactions, recovery, query optimization, and parallel architectures.
+  - id: src-sei-software-architecture-practice-4e
+    title: Software Architecture in Practice, Fourth Edition
+    url: https://www.sei.cmu.edu/library/software-architecture-in-practice-fourth-edition/
+    authority: primary
+    publisher: Carnegie Mellon Software Engineering Institute
+    domain_tags: [architecture, quality-attributes, design, tradeoffs]
+    version: fourth-edition
+    first_seen: "2026-09-11"
+    last_verified: "2026-09-11"
+    supports_claims: []
+    challenges_claims: []
+    trust_notes: SEI canonical architecture text emphasizing quality attributes, lifecycle reasoning, analysis, evolution, and tradeoffs.
+  - id: src-stanford-cs255-2026
+    title: Stanford CS255 Introduction to Cryptography — Winter 2026
+    url: https://cs255.stanford.edu/syllabus.html
+    authority: university
+    publisher: Stanford University
+    domain_tags: [security, cryptography, protocols, adversarial-reasoning]
+    version: winter-2026
+    first_seen: "2026-09-11"
+    last_verified: "2026-09-11"
+    supports_claims: []
+    challenges_claims: []
+    trust_notes: Current advanced cryptography syllabus using Katz-Lindell and the freely available Boneh-Shoup graduate text.
+  - id: src-mit-6854-advanced-algorithms
+    title: MIT 6.854J Advanced Algorithms — Reference Corpus
+    url: https://ocw.mit.edu/courses/6-854j-advanced-algorithms-fall-2008/pages/readings/
+    authority: university
+    publisher: MIT OpenCourseWare
+    domain_tags: [algorithms, data-structures, optimization, approximation, randomized-algorithms]
+    version: fall-2008-ocw
+    first_seen: "2026-09-11"
+    last_verified: "2026-09-11"
+    supports_claims: []
+    challenges_claims: []
+    trust_notes: Graduate reference corpus spanning flows, data structures, randomized, online, approximation, and optimization literature.
+  - id: src-cmu-17803-empirical-methods
+    title: CMU 17-803 Empirical Methods
+    url: https://coursecatalog.web.cmu.edu/schools-colleges/schoolofcomputerscience/courses/
+    authority: university
+    publisher: Carnegie Mellon University
+    domain_tags: [empirical-software-engineering, research-methods, qualitative, quantitative]
+    version: current-catalog
+    first_seen: "2026-09-11"
+    last_verified: "2026-09-11"
+    supports_claims: []
+    challenges_claims: []
+    trust_notes: PhD-level empirical methods course covering interviews, coding, surveys, repository mining, statistics, and semester research projects.
